@@ -16,7 +16,7 @@
 package io.github.streamingwithflink.applications;
 
 import io.github.streamingwithflink.model.SensorReading;
-import io.github.streamingwithflink.func.SensorSource;
+import io.github.streamingwithflink.function.source.SensorSource;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.common.typeinfo.Types;

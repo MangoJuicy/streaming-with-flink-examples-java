@@ -1,4 +1,4 @@
-package io.github.streamingwithflink.func;
+package io.github.streamingwithflink.function;
 
 import io.github.streamingwithflink.model.SensorReading;
 import org.apache.flink.streaming.api.functions.windowing.WindowFunction;

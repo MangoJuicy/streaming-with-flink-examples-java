@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.streamingwithflink.applications;
+package io.github.streamingwithflink.applications.chap5;
 
-import io.github.streamingwithflink.func.TemperatureAverager;
+import io.github.streamingwithflink.function.TemperatureAverager;
 import io.github.streamingwithflink.model.SensorReading;
-import io.github.streamingwithflink.func.SensorSource;
-import io.github.streamingwithflink.func.SensorTimeExtractor;
+import io.github.streamingwithflink.function.source.SensorSource;
+import io.github.streamingwithflink.function.SensorTimeExtractor;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -26,6 +26,7 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 
 /**
  * chap 5 example
+ * 求取每个 sensor 每 2 秒钟的温度平均值。允许 record 有 5 秒延迟到达。
  */
 public class AverageSensorReadings {
 
@@ -46,7 +47,7 @@ public class AverageSensorReadings {
                 // organize stream by sensor
                 .keyBy(r -> r.id)
                 // group readings in 1 second windows
-                .timeWindow(Time.seconds(1))
+                .timeWindow(Time.seconds(2))
                 // compute average temperature using a user-defined function
                 .apply(new TemperatureAverager());
 

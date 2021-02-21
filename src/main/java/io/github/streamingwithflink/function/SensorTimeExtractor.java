@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.streamingwithflink.func;
+package io.github.streamingwithflink.function;
 
 import io.github.streamingwithflink.model.SensorReading;
 import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;

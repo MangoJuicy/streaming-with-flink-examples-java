@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.streamingwithflink.func;
+package io.github.streamingwithflink.function.source;
 
 import io.github.streamingwithflink.model.SmokeLevel;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;

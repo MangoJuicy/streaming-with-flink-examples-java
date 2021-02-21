@@ -16,8 +16,8 @@
 package io.github.streamingwithflink.applications;
 
 import io.github.streamingwithflink.model.SensorReading;
-import io.github.streamingwithflink.func.SensorSource;
-import io.github.streamingwithflink.func.SensorTimeExtractor;
+import io.github.streamingwithflink.function.source.SensorSource;
+import io.github.streamingwithflink.function.SensorTimeExtractor;
 import org.apache.flink.api.common.ExecutionConfig;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;

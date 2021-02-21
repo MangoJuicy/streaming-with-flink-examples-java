@@ -1,5 +1,5 @@
 io/github/streamingwithflink/chapter5/KeyedTransformations.java
- io.github.streamingwithflink.applications.KeyedTransformations
+ io.github.streamingwithflink.applications.chap5.KeyedStream_ReduceTransformation
 io/github/streamingwithflink/chapter6/CoProcessFunctionTimers.java
  io.github.streamingwithflink.applications.CoProcessFunctionTimers
  io.github.streamingwithflink.applications.CoProcessFunctionTimers$ReadingFilter
@@ -12,14 +12,14 @@ io/github/streamingwithflink/model/SensorReading.java
 io/github/streamingwithflink/func/SensorSource.java
  io.github.streamingwithflink.func.SensorSource
 io/github/streamingwithflink/applications/AverageSensorReadings.java
- io.github.streamingwithflink.applications.AverageSensorReadings
+ io.github.streamingwithflink.applications.chap5.AverageSensorReadings
 io/github/streamingwithflink/chapter5/util/SmokeLevelSource.java
  io.github.streamingwithflink.func.SmokeLevelSource
 io/github/streamingwithflink/chapter5/BasicTransformations.java
- io.github.streamingwithflink.applications.BasicTransformations
- io.github.streamingwithflink.applications.BasicTransformations$IdExtractor
- io.github.streamingwithflink.applications.BasicTransformations$IdSplitter
- io.github.streamingwithflink.applications.BasicTransformations$TemperatureFilter
+ io.github.streamingwithflink.applications.chap5.BasicTransformations
+ io.github.streamingwithflink.applications.chap5.BasicTransformations$IdExtractor
+ io.github.streamingwithflink.applications.chap5.BasicTransformations$IdSplitter
+ io.github.streamingwithflink.applications.chap5.BasicTransformations$TemperatureFilter
 io/github/streamingwithflink/chapter6/CustomWindow.java
  io.github.streamingwithflink.applications.CustomWindow
  io.github.streamingwithflink.applications.CustomWindow$CountFunction
@@ -28,9 +28,9 @@ io/github/streamingwithflink/chapter6/CustomWindow.java
 io/github/streamingwithflink/chapter5/util/SmokeLevel.java
  io.github.streamingwithflink.model.SmokeLevel
 io/github/streamingwithflink/chapter5/MultiStreamTransformations.java
- io.github.streamingwithflink.applications.MultiStreamTransformations
- io.github.streamingwithflink.applications.MultiStreamTransformations$RaiseAlertFlatMap
+ io.github.streamingwithflink.applications.chap5.MultiStreamTransformations
+ io.github.streamingwithflink.applications.chap5.MultiStreamTransformations$RaiseAlertFlatMap
 io/github/streamingwithflink/func/SensorTimeExtractor.java
  io.github.streamingwithflink.func.SensorTimeExtractor
 io/github/streamingwithflink/chapter5/RollingSum.java
- io.github.streamingwithflink.applications.RollingSum
+ io.github.streamingwithflink.applications.chap5.KeyedStream_RollingSum
